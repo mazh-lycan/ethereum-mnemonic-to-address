@@ -3,8 +3,8 @@ const ethers = require('ethers');
 const Web3 = require('web3');
 
   //mnemonic: 15 words
-  //mnemonic= 'write the fifteen words from your ethereum mnemonic here to generate keystore with its data'
-  mnemonic = 'raw course slim hockey salt crawl sick safe december during armed fragile'
+  mnemonic= 'write the fifteen words from your ethereum mnemonic here to generate keystore with its data'
+
   //seed: Seed from mnemonic used to generate the Ethereum accounts 
   seed= ethers.HDNode.mnemonicToSeed(mnemonic)
   console.log('Seed: ', seed)
