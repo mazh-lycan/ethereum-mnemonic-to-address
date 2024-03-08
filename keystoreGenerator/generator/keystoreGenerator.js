@@ -40,12 +40,12 @@ console.log('-----------------------------Creating Keystore---------------------
 console.log('-----------------------------------------------------------------------------------')
 
 
-//for BESU network use http://63.33.206.111:8545
-var web3 = new Web3(Web3.givenProvider || 'http://63.33.206.111/rpc'); 
+var web3 = new Web3(Web3.givenProvider); 
 
 var privateKey = privateKeyDigitel
 
 //PASSWORD needed to encrypt the keystore with all the account data
+//Use your own password here for it
 var password = 'change password here'
 
 var JsonWallet = web3.eth.accounts.encrypt(privateKey, password);
@@ -54,8 +54,8 @@ console.log(JsonWallet)
 var holderjson = JSON.stringify(JsonWallet)
 var fs = require('fs')
 
-//NAME is your keystore name, where it would be saved for future uses. Save the password used in line 47
-//to unlock it and obtain ALL the account data
+//NAME is your keystore name, where it would be saved for future uses. Save the password used in line 49 
+//above to unlock it and obtain ALL the account data
 fs.writeFile('../keystores/NAME.json', holderjson, function(err, result){
 
   if(err) console.log('Error', err);
