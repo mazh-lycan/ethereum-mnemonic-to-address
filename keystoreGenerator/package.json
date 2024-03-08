@@ -1,0 +1,23 @@
+{
+    "name": "ethereum-dependencies",
+    "version": "1.0.0",
+    "description": "Dependencies for Ethereum script to generate private and public key (uncompressed and compressed), keystore and address from a given mnemonic",
+    "main": "keystoreGenerator.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "ethereum",
+      "web3",
+      "ethers",
+      "keythereum"
+    ],
+    "author": "Mazh Lycan",
+    "license": "ISC",
+    "dependencies": {
+      "keythereum": "^1.2.0",
+      "ethers": "^5.4.3",
+      "web3": "^1.5.0"
+    }
+  }
+  
