@@ -13,6 +13,7 @@ const Web3 = require('web3');
 
 
   //private: first account's private key obtained from seed
+  //If mnemonic is not structured correctly, invalid checksum error may appear here
   privateKeyDigitel =  ethers.Wallet.fromMnemonic(mnemonic).privateKey;
   console.log('Private key: ', privateKeyDigitel)
 
