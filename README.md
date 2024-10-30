@@ -20,8 +20,8 @@ Run `node  .\keystoreGenerator.js` on *keystoreGenerator/generator*
 This script may be useful for the following use cases:
 
 - IF EXECUTED EXCLUSIVELY LOCALLY: 
-    - Generate a paper wallet, that's it a wallet which seed phrase has never been uploaded anywhere and it is kept safe, to send tokens to the correspondant address. Similar to a Cold Wallet but less fancy.
-- In case of wanting to use on Metamask a different address from the stored there and you only know the seed of your new wallet, you can generate the private key with this script to load it on the extension.
+    - Generate a paper wallet, that's it a wallet which seed phrase has never been uploaded anywhere and it is kept safe, to send tokens to the correspondant address. Similar to a Cold Wallet but less fancy. 
+    - In case of using Metamask and wanting to use a different address from the one stored there, and only knowing the seed of your new wallet, you can generate the private key with this script to load it on the extension.
 
 
 ## FINAL NOTES
